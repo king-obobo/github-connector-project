@@ -1,0 +1,20 @@
+[project]
+name = "github-connector-project"
+version = "0.1.0"
+description = "A resilient Github connector"
+authors = [
+    {name = "king-obobo",email = "oboboebuka1@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "github_connector_project"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
